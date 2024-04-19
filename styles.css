@@ -1,7 +1,7 @@
 /* Import a Google font for elegant typography */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-/* Basic reset for margins, paddings, and box-sizing */
+/* Reset margins, padding, and box-sizing for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -11,8 +11,8 @@
 /* Elegant font for the content */
 body {
     font-family: 'Playfair Display', serif;
-    color: #333;
-    background-color: #f7f7f7;
+    background-color: #1a1a1a; /* Dark background for the body */
+    color: #dcdcdc; /* Light grey color for text */
     line-height: 1.8;
 }
 
@@ -24,10 +24,9 @@ body {
     padding: 20px;
 }
 
-/* Header styles for a deep, rich background with gold text */
+/* Header styles with transparent background and light text */
 header {
-    background: #1c1c1c;
-    color: #dcb67a;
+    color: #dcdcdc;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -51,56 +50,42 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #dcb67a;
+    color: #dcdcdc;
     font-weight: 700;
     font-size: 1.1em;
 }
 
 nav a:hover {
-    color: #f5f5f5;
+    color: #ffd700; /* Golden color for hover state */
 }
 
-/* Hero section with a dark overlay for text to pop */
+/* Hero section with a darkened image for elegance */
 .hero {
     background: url('path-to-hero-image.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 100px 0;
     text-align: center;
     position: relative;
-    z-index: 1;
 }
 
-.hero::after {
-    content: '';
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better readability */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-/* Section heading styles */
+/* Headings with golden underline for emphasis */
 h1, h2, h3 {
-    color: #1c1c1c;
+    color: #dcdcdc;
     margin-bottom: 0.5em;
 }
 
-/* Elegant gold underlines for headings */
 h2::after {
     content: '';
     display: block;
     width: 50px;
     height: 3px;
-    background: #dcb67a;
+    background: #ffd700; /* Golden underline for headings */
     margin: 10px auto;
 }
 
 /* Footer styles */
 footer {
-    background: #1c1c1c;
-    color: #dcb67a;
+    color: #dcdcdc;
     text-align: center;
     padding: 30px 0;
     margin-top: 40px;
