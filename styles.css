@@ -1,47 +1,110 @@
+/* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
+
+/* Container for content */
 .container {
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
+    padding: 20px;
 }
+
+/* Header Styles */
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #bbb 1px solid;
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
+
 header a {
-    color: #fff;
+    color: #ffd700; /* golden color for links */
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 10px 20px;
 }
+
 header li {
-    float: left;
     display: inline;
-    padding: 0 20px 0 20px;
 }
+
 header #branding {
     float: left;
 }
+
 header #branding img {
-    height: 60px;
+    height: 80px;
 }
+
 header nav {
     float: right;
-    margin-top: 10px;
+    margin-top: 20px;
 }
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
 header .highlight, header .current a {
     color: #e8491d;
     font-weight: bold;
 }
+
 header a:hover {
     color: #ffffff;
-    font-weight: bold;
+    background-color: #555; /* Darker background on hover */
+}
+
+/* Section Heading Styles */
+h2, h3 {
+    color: #333;
+    background-color: #ffd700; /* Golden background for headings */
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Paragraph Styling */
+p {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #ffd700; /* Golden left border for paragraphs */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Styling Lists for navigation */
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Responsive Navigation Menu */
+@media (max-width: 768px) {
+    header nav, header nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    header #branding, header nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    header #branding img {
+        margin: 20px 0;
+    }
 }
